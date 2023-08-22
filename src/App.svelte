@@ -2,7 +2,7 @@
   import svelteLogo from "./assets/svelte.svg";
   import runeLogo from "./assets/rune.svg";
   import viteLogo from "/vite.svg";
-  import Counter from "./lib/Counter.svelte";
+
 
   import { game } from "./store";
   import { onMount } from "svelte";
@@ -14,6 +14,8 @@
       },
     });
   });
+
+ 
 </script>
 
 {#if !$game}
@@ -71,7 +73,7 @@
   .logo.svelte:hover {
     filter: drop-shadow(0 0 2em #ff3e00aa);
   }
-  .logo rune:hover {
+  .logo.rune:hover {
     filter: drop-shadow(0 0 2em #9b51e0);
   }
   .read-the-docs {
